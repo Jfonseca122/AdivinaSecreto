@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina Mi Secreto</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="container___titulo">
+            <h1 class="titulo___principal">  Adivina<span class="span__titulo_principal"> Mi Secreto </span></h1>
+            
+            <div class="contenido__linea">
+                <hr class="linea">
+                <button onclick="respuestaCinco()" id="incognita">@</button>
+                <hr class="linea">
+                
+            </div>
+        </div>
+        
+    </header>
+
+    <main class="main">
+
+        <div class="contenido__main">
+
+            <section class="section__personajes">
+
+                <div class="container__general_personajes">
+
+                    <div class="container__titulo_segundario">
+                        <h2 class="titulo___segundario">Selecciona uno de los personajes</h2>
+                        <small id="eleccion" class="small__titulo__segunadrio">Al seleccionar un personaje tienes la oportunidas de adivinar su secreto. No sera facil.</small>
+                    </div>
+
+                    <div class="container__sub_personajes">
+                        <div class="container__personaje">
+                            <button  onclick="personajeSergio()" id="persona_numero_uno" class="btn_personaje" title="Sergio"></button>
+                        </div>
+                        <div class="container__personaje">
+                            <button  onclick="personajeJimmy()" id="persona_numero_dos" class="btn_personaje" title="Jimmy"></button>
+                        </div>
+                        <div class="container__personaje">
+                            <button  onclick="personajeChope()" id="persona_numero_tres" class="btn_personaje" title="Jhon"></button>
+                        </div>
+                        <div class="container__personaje">
+                            <button  onclick="personajePapo()"  id="persona_numero_cuatro" class="btn_personaje" title="Jose"></button>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+            </section>
+            
+            <section id="section__funcionalidad" class="section__funcionalidad">
+
+                <div class="container___funcionalidad">
+
+                    <div class="container___funcionalidad__vidas">
+
+                        <div id="vidas" class="vidas">3</div>
+                        <p>❤️</p>
+
+                    </div>
+
+                    <div class="card__preguntas">
+
+                        <div class="container__preguntas">
+                            <h4 id="preguntas__usuario" class="preguntas__usuario">Pregunta numero 1 </h4>
+                            <h6>Sin espacio, ni acento </h6>
+                             <input id="entrada" type="text">
+                            <!-- <div class="contenido__preguntas">
+                                <input type="checkbox" name="entrada__uno" id="entrada__uno" value="1"> 
+                                <label for="entrada__uno">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                            </div>
+
+                            <div class="contenido__preguntas">
+                                <input type="checkbox" name="entrada__dos" id="entrada__dos" value="2"> 
+                                <label for="entrada__dos">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                            </div>
+
+                            <div class="contenido__preguntas">
+                                <input type="checkbox" name="entrada__tres" id="entrada__tres" value="3"> 
+                                <label for="entrada__tres">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                            </div>
+
+                            <div class="contenido__preguntas">
+                                <input type="checkbox" name="entrada__tres" id="entrada__cuatro" value="4"> 
+                                <label for="entrada__cuatro">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                            </div> -->
+
+                            <div class="contenido_btn">
+
+                                <button  onclick="validarPreguntas ()"  class="btn__verificar">Verificar</button>
+
+                            </div>
+                            
+                            
+                        </div>
+
+                    
+
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+           
+        </div>
+
+        <section class="section__respuestas">
+
+            <div class="contenido__respuestas">
+
+                <div class="contenido__card">
+
+                    <div class="contenido__emoji">
+                        <p id="emoji" class="emoji">🙂</p>
+                    </div>
+    
+                    <div class="contenido__txt__respuestas">
+                        <h4 id="respuestas__txt__principal" class="respuestas__txt__principal"></h4>
+                        <small id="respuestas__txt__vidas" class="respuestas__txt__vidas"></small>
+                    </div>
+
+                </div>
+                
+
+
+
+
+
+            </div>
+
+        </section>
+    </main>
+    <script src="./script/index.js"></script>
+</body>
+</html>

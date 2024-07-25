@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-principal:pink;
+    --color-segundario:white;
+    --color-negro:black;
+}
+
+body{
+    background-color:var(--color-principal);
+    color: var(--color-negro);
+}
+
+.header{
+    
+    padding: 2rem;
+    text-align: center;
+}
+.titulo___principal{
+    color: var(--color-segundario);
+    text-shadow: black 0px 3px;
+    font-size: 4rem;
+
+
+}
+.span__titulo_principal{
+   color: rgb(246, 132, 132);
+}
+.contenido__linea{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.linea{
+    height: 0.1rem;
+    width: 50%;
+    background-color: var(--color-negro);
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+   
+   
+}
+
+
+
+.section__personajes{
+   
+    margin-bottom: 1rem;
+   
+   
+}
+
+.container__titulo_segundario{
+    
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.titulo___segundario{
+    font-size: 2rem;
+    color: var(--color-negro);
+    
+}
+.container__sub_personajes{
+    display: flex;
+    gap: 4rem;
+
+   
+   
+  
+}
+
+.btn_personaje{
+    background-image: url('../img/Sergio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -2rem;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    cursor: pointer;
+    
+    
+}
+#persona_numero_cuatro{
+    background-image: url('../img/Imagen\ de\ WhatsApp\ 2024-07-24\ a\ las\ 19.51.01_df28e6d9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -2rem;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    cursor: pointer;
+}
+#persona_numero_tres{
+    background-image: url('../img/chope.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0.5rem;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    cursor: pointer;
+}
+#persona_numero_dos{
+    background-image: url('../img/jimmy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0rem;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    cursor: pointer;
+}
+.section__funcionalidad{
+    display: none;
+}
+.container___funcionalidad{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    
+}
+.container___funcionalidad__vidas{
+    
+    display:flex ;
+    justify-content: end;
+}
+.container__preguntas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    
+}
+input:hover{
+    border: none;
+}
+.contenido_btn{
+    display: flex;
+    justify-content: end;
+}
+.btn__verificar{
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn__verificar:hover{
+    background-color: var(--color-principal);
+   
+}
+
+.section__respuestas{
+   
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.contenido__respuestas{
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px black;
+    
+}
+
+
+.emoji{
+    
+    font-size: 5rem;
+    text-shadow:1px 1px 4px  black;
+    animation: rotarImagen 3s linear  ;
+}
+
+.emoji:hover{
+  animation: rotarImagen 2s linear infinite;
+}
+@keyframes rotarImagen {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+} 
+.contenido__txt__respuestas{
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: white;
+    
+}
+
+@media (max-width: 1400px){
+
+    .main{
+        flex-direction: column;
+    }
+    .container__sub_personajes{
+       
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       justify-content: center;
+       
+       
+       
+        
+    }
+    .section__respuestas{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .contenido__respuestas{
+        width:100% ;
+    }
+
+}
